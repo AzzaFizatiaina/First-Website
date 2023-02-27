@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Homepage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/reviews.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<style>
+body, h1,h2,h3 {font-family: "Lato", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+tr:hover {background-color:#cccccc;}
+
+th {
+  background-color:  #999999;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="homepage.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">IMAZMIM HOMESTAY</a>
+    <a href="gallery.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">GALLERY</a>
+     <a href="index.php" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="contacts.html" class="w3-bar-item w3-button">CONTACT</a>
+      </div>
+    </div>
+    <a href="customerlogin.php" class="w3-padding-large w3-hide-small w3-right">LOGIN</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+
+  <div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="images/fit.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Exercise</h3>
+      <p><b>Make it addicted!</b></p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="images/fit1.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Treatment</h3>
+      <p><b>Treat your body whenever you sick, don't burden yorself.</b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="images/fit2.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Foods</h3>
+      <p><b>Thank you, your body heal and will be great.</b></p>    
+    </div>
+  </div>
+
+    <!-- About Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" >
+   <div>
+   <audio controls autoplay>  
+      <source src="audio/sound.mp3" type="audio/mpeg">
+    </audio> <br>
+    <p class="w3-small fa fa-arrow-circle-up" style="color: lightgrey"><i> click above icon to play/stop</i></p>
+  </div>
+
+  <div class="w3-container w3-content w3-center w3-padding-30" style="max-width:800px" >
+    <h2 class="w3-wide">About</h2>
+    <p class="w3-opacity"><i>Background of group project</i></p>
+    <p class="w3-justify">In this course, we are expected to develop skills in dynamic web application development by designing a system.This group project actually act as a platform for us to improve our soft skills such as logical thinking, critical thinking, problem solving, programming and esprit decorps. The ideal group size is 3 – 5 members. In this individual project, we will be expected to develop a website which is not only functionally correct but also well-structured, well-documented and readable.
+     </p>
+     <p class="w3-justify">
+       We decided to create a <strong>Healthcare Management system</strong>. This system is expected to provide information about healthcare such as tips to stay healthy either mentally or physically and the updated health diseases throughout the world. Besides, this system also enable user to purchase some of healthcare products.
+     </p>
+    <p style="text-align: center;"><b style="color: red">Submission due date is on Week 14.</b></p>
+
+   <!-- Overview Section -->
+  <hr>
+    <h2 class="w3-wide">Overview</h2>
+    <p class="w3-opacity"><i>Background of IMAZMIM Healthcare</i></p>
+     <p class="w3-justify">
+       Basically, the main of <strong>IMAZMIM Healthcare</strong> is noy only to provide information about health but also raising awareness of the importance of maintaining health.
+     </p>
+
+     <div>
+      <video width="800" controls >
+        <source src="videos/TheChoice.mp4" type="video/mp4">
+        </video>
+        <br>Short Animated Movie
+        <a href="https://www.youtube.com/watch?v=_HEnohs6yYw" target="_blank">THE CHOICE </a>.
+      </p>
+    </div> 
+</div>
+
+  <!-- Gallery Section -->
+  <hr>
+  <div class="w3-padding-32 w3-content" id="portfolio">
+    <h2 class="w3-text-grey">Contents</h2>
+    
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" class="container" style="margin:0 -16px">
+      <div class="w3-half">
+        <a href="gallery.html"><img src="images/gallerypage.jpeg" style="width:100%"  class="hover-shadow cursor" ></a>
+        <a href="index.php"><img src="images/productpage.jpeg" style="width:100%" class="hover-shadow cursor" ></a>
+      </div>
+
+      <div class="w3-half">
+        <a href="blog.html"><img src="images/blogpage.jpeg" style="width:100%" class="hover-shadow cursor" ></a>
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Gallery Section -->
+  </div>
+
+  <div class="w3-padding-32 w3-content">
+    <table>
+  <tr>
+    <th>Contents</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Gallery</td>
+    <td>Provide some photos about healthy lifestyle.</td>
+  </tr>
+  <tr>
+    <td>Product</td>
+    <td>Equipments, supplements and program available to purchase.</td>
+  </tr>
+  <tr>
+    <td>Blog</td>
+    <td>Provide up to date news and inforation about healthcare.</td>
+  </tr>
+  <tr>
+    <td>Login</td>
+    <td>Enable user or admin to proceed with another action/process.</td>
+</tr>
+</table>
+  </div>
+
+
+  <!-- Contact Section -->
+  <hr>
+  <div class="w3-padding-32 w3-content w3-text-grey w3-justify" id="contact">
+    <h2>Contact</h2>
+    <div class="w3-section ">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Malaysia</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +60 03800800</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: imazmimhealthcare.com.my</p><br>
+    </div>
+  </div>
+
+
+<hr>
+
+	<div class="w3-content w3-text-grey w3-justify">
+			<h2>Reviews</h2>
+			<p>Write some comments for our website.</p>
+			<div class="reviews"></div>
+			</div>
+			
+			</div>
+      
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-theme-d4 w3-center  w3-xlarge" style="margin:-24px">
+    <p class="w3-medium">@imazmimhealthcare</a></p>
+  <!-- End footer -->
+  </footer>
+  
+<!-- END PAGE CONTENT -->
+</div>
+<script>
+  // Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+
+</script>
+
+<script>
+const reviews_page_id = 1;
+fetch("reviews.php?page_id=" + reviews_page_id).then(response => response.text()).then(data => {
+	document.querySelector(".reviews").innerHTML = data;
+	document.querySelector(".reviews .write_review_btn").onclick = event => {
+		event.preventDefault();
+		document.querySelector(".reviews .write_review").style.display = 'block';
+		document.querySelector(".reviews .write_review input[name='name']").focus();
+	};
+	document.querySelector(".reviews .write_review form").onsubmit = event => {
+		event.preventDefault();
+		fetch("reviews.php?page_id=" + reviews_page_id, {
+			method: 'POST',
+			body: new FormData(document.querySelector(".reviews .write_review form"))
+		}).then(response => response.text()).then(data => {
+			document.querySelector(".reviews .write_review").innerHTML = data;
+		});
+	};
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Contact</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+
+
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
+   <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">CLOSE</a> 
+  <a href="homepage.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">HOME</a>
+    <a href="blog.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16"> BLOG</a>   
+  <a href="gallery.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16"> GALLERY</a>
+  <a href="index.php" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16"> PRODUCT</a> 
+  <a href="quit.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16"> EXIT</a> 
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-white w3-xlarge w3-padding-16 w3-opacity">
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-theme w3-collapse w3-top w3-large w3-padding w3-opacity" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+   <div class="w3-center audio w3-opacity">
+   <audio controls autoplay>   
+      <source src="audio/sound3.mp3" type="audio/mpeg">
+    </audio> 
+  </div>
+    <h3 class="w3-xxlarge w3-padding-64"><b>HIT<br>ME UP!</b></h3>
+  </div>
+  <div class="w3-bar-block ">
+    <a href="#general" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">General</a> 
+      <div class="w3-container w3-white">
+    <p class="w3-bar-item "><b>SOCIAL MEDIA</b> </p> 
+  </div>
+    <a href="#facebook" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Facebook</a> 
+    <a href="#instagram" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Instagram</a> 
+    <a href="#twitter" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Twitter</a> 
+  </div>
+</nav>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-theme-l4">
+<div class="w3-main" style="margin-left:340px;margin-right:40px;margin-top:100px">
+
+  <!-- Genaral -->
+  <div class="w3-container" id="general" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-grey w3-animate-left"><b>General.</b></h1>
+    <hr style="width:50px;border:5px solid black" class="w3-round">
+     <p><i class=" fa fa-map-marker w3-xxlarge w3-margin-right"></i> Location : Malaysia</p>
+      <p><i class="fa fa-phone w3-xxlarge w3-margin-right"></i> Phone: +60 03800800</p>
+      <p><i class="fa fa-envelope w3-xxlarge w3-margin-right"> </i> Email: imazmimhealthcare@gmail.com</p>
+  </div>
+  
+  <!-- Facebook -->
+  <div class=" w3-container" id="facebook" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-grey w3-animate-left"><b>Facebook .</b></h1>
+    <hr style="width:50px;border:5px solid black" class="w3-round">
+    <p>Our official facebook page.</p>
+    <i class="  fa fa-facebook-square fa-pulse fa-spin "></i><a href="https://www.facebook.com"> IMAZMIM Healthcare </a> 
+    <p><b>Informative page for anyone that seeks for healthcare.</b>:</p>
+  </div>
+
+  <!-- Instagram -->
+  <div class=" w3-container" id="instagram" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-grey w3-animate-left"><b>Instagram .</b></h1>
+    <hr style="width:50px;border:5px solid black" class="w3-round">
+    <p>Our official instagram page.</p>
+    <i class="fa fa-instagram fa-pulse fa-spin "></i><a href="https://instagram.com"> @imazmimhealthcare </a> 
+    <p><b>Our page</b>:</p>
+  </div>
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/instagram.png"  style="width:100%">
+        <div class="w3-container">
+          <h3>IMAZMIM Healthcare</h3>
+          <p class="w3-opacity">Official Instagram Page</p>
+          <p>Some updates mainly about healthcare. Tips also available.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Twitter -->
+  <div class="w3-container" id="twitter" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-grey w3-animate-left"><b>Twitter.</b></h1>
+    <hr style="width:50px;border:5px solid black" class="w3-round">
+    <p>Our official twitter page.</p>
+    <i class="fa fa-twitter"></i><a href="https://twitter.com">@imazmimhealthcare </a> 
+  </div>
+  
+</div>
+
+<footer class="w3-padding-32 w3-theme-d4 w3-center w3-margin-top">
+  <div class="w3-xlarge w3-padding-16 ">
+  </div>
+  <p>@imazmimhealthcare</p>
+</footer>
+
+<!-- End page content -->
+</div>
+
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+</body>
+</html>

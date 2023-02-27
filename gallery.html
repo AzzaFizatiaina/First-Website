@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Gallery</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-quarter img{margin-bottom: -6px; cursor: pointer}
+.w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+</style>
+
+<body class="w3-theme-l4">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
+<a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">CLOSE</a> 
+  <a href="homepage.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">HOMEPAGE</a> 
+  <a href="contacts.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">CONTACT</a>
+  <a href="customerlogin.php" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16"> LOGIN</a> 
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-white w3-xlarge w3-padding-16 w3-opacity w3-theme-l4">
+  <span class="w3-left w3-padding">GALLERY</span>
+
+   <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-theme-l4 " style="max-width:1600px;margin-top:83px">
+
+<div class="w3-theme-l1">
+  <br>
+    <div class="w3-center w3-opacity ">
+   <audio controls autoplay>  
+      <source src="audio/sound2.mp3" type="audio/mpeg">
+    </audio> 
+  </div>
+
+  <div class="w3-center ">
+    <p>Welcome to this section!<br>
+    	Few tips are provided to keep your life healthy and productive.
+    </p>
+    <br>
+  </div>
+</div>
+
+   <!-- Gallery Section -->
+  
+  <div class="w3-padding-32 w3-content w3-theme-l4  " id="gallery">
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" class="container" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="images/food1.jpg" style="width:100%"  class="hover-shadow cursor" onclick="onClick(this)" alt="Guideliness to choose healthy food">
+        <img src="images/drink.jpg" style="width:100%" class="hover-shadow cursor" onclick="onClick(this)" alt="Daily water intake is very important to our health">
+        <img src="images/food.jpg" style="width:100%" class="hover-shadow cursor" onclick="onClick(this)" alt="It is good to start your day with a healthy meal">
+      </div>
+
+      <div class="w3-half">
+        <img src="images/life.jpg" style="width:100%"  class="hover-shadow cursor" onclick="onClick(this)" alt="Guideliness of healthy lifestyle">
+        <img src="images/run.jpg" style="width:100%" class="hover-shadow cursor" onclick="onClick(this)" alt="Running can actual burn more fat.">
+        <img src="images/gym.jpg" style="width:100%"  class="hover-shadow cursor" onclick="onClick(this)" alt="A group training workout is better than alone.">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Gallery Section -->
+  </div>
+
+    <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+  <!-- End page content -->
+</div>
+
+
+<footer class="w3-padding-32 w3-theme-d4 w3-center w3-margin-top">
+  <div class="w3-xlarge w3-padding-16 ">
+  </div>
+  <p>@imazmimhealthcare</p>
+</footer>
+
+</div>
+
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+
+</body>
+</html>
